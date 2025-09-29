@@ -37,9 +37,38 @@ main {
     }
 }
 
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .project-card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem;
 }
+
+.image-container {
+    width: 300px;
+    height: 200px;
+    overflow: auto;   /* enables scrolling if image is larger */
+    border: 1px solid #ccc; /* just for visibility */
+}
+
+.image-container img {
+    max-width: 100%;   /* keeps scaling proportional horizontally */
+    height: auto;      /* preserves aspect ratio */
+    display: block;
+}
+
+.project-card {
+    transition: all 0.5s ease;  /* applies easing to any style changes */
+}
+
+.project-card.highlight {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
