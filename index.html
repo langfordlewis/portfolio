@@ -1,64 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick Lewis | Portfolio</title>
-    <meta name="description" content="Portfolio of Nick Lewis, Web Developer. Showcase of projects, skills, and contact info.">
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nick Lewis | Portfolio</title>
+	<meta name="description" content="Portfolio of Nick Lewis, Web Developer. Showcase of projects, skills, and contact info.">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-    <div class="logo">
-    <a href="/">nicklewis.digital</a>
-    </div>
-    <nav class="main-nav">
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    </nav>
-</header>
+	<header class="site-header">
+		<div class="logo">
+			<a href="/">nicklewis.digital</a>
+		</div>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#projects">Work</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <main>
-    <section id="projects">
-        <h2>My Work</h2>
-        <!-- Portfolio items go here -->
-            <div class="card-row">
-                <div class="project-card">
-                    <div class="image-container">
-                        <img id="p-c-1" src="assets/ux-ui.png" alt="Project 1 screenshot">
-                    </div>
-                    <h3>Project Name</h3>
-                    <p>Short description of project.</p>
-                    <a href="https://github.com/nicklewis/project1">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <div class="image-container">
-                        <img id="p-c-1" src="assets/ux-ui.png" alt="Project 1 screenshot">
-                    </div>
-                    <h3>Project Name</h3>
-                    <p>Short description of project.</p>
-                    <a href="https://github.com/nicklewis/project1">View on GitHub</a>
-                </div>
-            </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-    </section>
-    </main>
+	<main>
+		<!-- ABOUT SECTION -->
+		<section id="about" class="section">
+			<h1>About Me</h1>
+			<p>Hello! I'm Nick Lewis, a web developer passionate about clean, functional design and elegant code. I specialize in creating lightweight, responsive websites that focus on user experience.</p>
+			<p>I bring a no-nonsense, solution-driven approach to every project, combining broad technical expertise with a human touch.</p>
+			<a href="#contact" class="btn">Get in Touch</a>
+		</section>
 
-    <footer>
-    &copy; 2025 Nick Lewis
-    </footer>
+		<!-- SERVICES SECTION -->
+		<section id="services" class="section">
+			<h2>Services</h2>
+			<div class="card-row">
+				<div class="project-card">
+					<h3>Web Development</h3>
+					<p>Building modern, responsive websites using WordPress, WooCommerce, and custom front-end solutions.</p>
+				</div>
+				<div class="project-card">
+					<h3>UI/UX Design</h3>
+					<p>Designing clean, user-friendly interfaces that enhance the user experience and drive engagement.</p>
+				</div>
+				<div class="project-card">
+					<h3>Consulting</h3>
+					<p>Providing expert guidance on digital strategy, website optimization, and technical problem solving.</p>
+				</div>
+			</div>
+		</section>
 
-    <script src="script.js"></script>
+		<!-- PROJECTS SECTION -->
+		<section id="projects" class="section">
+			<h2>My Work</h2>
+			<div class="card-row">
+				<div class="project-card">
+					<div class="image-container">
+						<img src="assets/ux-ui.png" alt="UX/UI Project screenshot">
+					</div>
+					<h3>Project Name 1</h3>
+					<p>A clean, responsive website built with modern CSS and JavaScript.</p>
+					<a href="https://github.com/nicklewis/project1">View on GitHub</a>
+				</div>
+				<div class="project-card">
+					<div class="image-container">
+						<img src="assets/ux-ui.png" alt="UX/UI Project screenshot">
+					</div>
+					<h3>Project Name 2</h3>
+					<p>Custom WordPress theme development with a focus on speed and accessibility.</p>
+					<a href="https://github.com/nicklewis/project2">View on GitHub</a>
+				</div>
+				<div class="project-card">
+					<div class="image-container">
+						<img src="assets/ux-ui.png" alt="UX/UI Project screenshot">
+					</div>
+					<h3>Project Name 3</h3>
+					<p>Interactive front-end features that enhance user engagement and experience.</p>
+					<a href="https://github.com/nicklewis/project3">View on GitHub</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- SKILLS SECTION -->
+		<section id="skills" class="section">
+			<h2>Skills</h2>
+			<ul>
+				<li>HTML, CSS, JavaScript</li>
+				<li>React, WordPress, WooCommerce</li>
+				<li>UI/UX Design & Prototyping</li>
+				<li>Version Control (Git/GitHub)</li>
+				<li>Problem Solving & Consulting</li>
+			</ul>
+		</section>
+
+		<!-- CONTACT SECTION -->
+		<section id="contact" class="section">
+			<h2>Contact</h2>
+			<p>If you’d like to work together or have a question, feel free to reach out!</p>
+			<form action="#" method="POST">
+				<label for="name">Name</label><br>
+				<input type="text" id="name" name="name" required><br><br>
+				<label for="email">Email</label><br>
+				<input type="email" id="email" name="email" required><br><br>
+				<label for="message">Message</label><br>
+				<textarea id="message" name="message" rows="5" required></textarea><br><br>
+				<input type="submit" value="Send Message">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		&copy; 2025 Nick Lewis
+	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
